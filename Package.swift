@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "DoorstepAIiOSSDKPackage",
+    name: "DoorstepAIiOSPackage",
     platforms: [
         .iOS(.v14) // Specify the minimum iOS version your framework supports
     ],
