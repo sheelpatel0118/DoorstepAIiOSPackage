@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		obLO7YS+03KDtThUVh0CGVKtfVY=
+		KAcsq5W1xi8XoLQZUKSNcwa67V4=
 		</data>
 		<key>Modules/DoorstepAIiOSSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -18,19 +18,19 @@
 		</data>
 		<key>Modules/DoorstepAIiOSSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		p2hQi1rUAm/N1rf7umLXnd0oe8c=
+		QSJt8QS3raN/xKK+1FAXV9Nj7do=
 		</data>
 		<key>Modules/DoorstepAIiOSSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		MA5HCaYIKbKevKs2DRrxgNJ2xHI=
+		CryqzYBjTU9YOIaMpvzszDjoJpw=
 		</data>
 		<key>Modules/DoorstepAIiOSSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		p2hQi1rUAm/N1rf7umLXnd0oe8c=
+		QSJt8QS3raN/xKK+1FAXV9Nj7do=
 		</data>
 		<key>Modules/DoorstepAIiOSSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		/xessgfEC93wjdB1os0hgJbFqW4=
+		SG1luiFhqrlHPTvrV9l+tkwDSXE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -57,28 +57,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3peEb7EKryJlnZ1YaCl/0kQyo6zoJHwD8/WEZi281IE=
+			J9OBUl9cm0+Rpu6NeuB2Rlb8mfFF5wxzSuzIrX/pbbM=
 			</data>
 		</dict>
 		<key>Modules/DoorstepAIiOSSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ISSTwNuLTOkq8mpZpBy7KiHU+/H0Ne+cbCe/nZZ2yOs=
+			8A2xDQaulBYczbby/sgmOHpZQ8Yb+6rkuUtPEkhRLzo=
 			</data>
 		</dict>
 		<key>Modules/DoorstepAIiOSSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3peEb7EKryJlnZ1YaCl/0kQyo6zoJHwD8/WEZi281IE=
+			J9OBUl9cm0+Rpu6NeuB2Rlb8mfFF5wxzSuzIrX/pbbM=
 			</data>
 		</dict>
 		<key>Modules/DoorstepAIiOSSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3cPDgjY7vME7xgiUouxza8ZghZXLRIhzAAevnQA/DLo=
+			BkBP41cN51ZgScUK+YCEV/00KHRO+0gO91IEi47ueWI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
