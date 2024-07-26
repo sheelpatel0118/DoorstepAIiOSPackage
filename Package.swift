@@ -9,7 +9,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "DoorstepAIiOSSDK",
+            name: "DoorstepAIiOSPackage",
             targets: ["DoorstepAIiOSSDK"]
         ),
     ],
