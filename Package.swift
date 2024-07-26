@@ -5,20 +5,30 @@ import PackageDescription
 
 let package = Package(
     name: "DoorstepAIiOSPackage",
+    platforms: [
+        .iOS(.v15)
+    ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "DoorstepAIiOSPackage",
-            targets: ["DoorstepAIiOSPackage"]),
+            targets: ["DoorstepAIiOSPackageWrapper"]),
     ],
     dependencies: [
-            .package(url: "https://github.com/google-ar/arcore-ios-sdk", from: "1.44.0")
-        ],
+        .package(url: "https://github.com/google-ar/arcore-ios-sdk", from: "1.44.0")
+    ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-//        .target(
-
-        .binaryTarget(name: "DoorstepAIiOSPackage", path: "./Sources/DoorstepAIiOSSDKFramework.xcframework")
+        .target(
+            name: "DoorstepAIiOSPackageWrapper",
+            dependencies: [
+                .target(name: "DoorstepAIiOSPackage"),
+                .product(name: "ARCoreGeospatial", package: "arcore-ios-sdk"),
+                .product(name: "ARCoreGARSession", package: "arcore-ios-sdk")
+            ],
+            path: "Sources/Wrapper"
+        ),
+        .binaryTarget(
+            name: "DoorstepAIiOSPackage",
+            path: "./Sources/DoorstepAIiOSSDKFramework.xcframework"
+        )
     ]
 )
