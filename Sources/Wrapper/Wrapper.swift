@@ -1,6 +1,7 @@
 import Foundation
-import DoorstepAIiOSSDKFramework
-import ARCoreGeospatial
+import ARCoreGeoSpatial
+import ARCoreGARSession
+import DoorstepAIiOSSDK
 
 // You'll need to import your binary framework here, but the name might be different
 // For example, if your framework's module name is "DoorstepAI", you'd use:

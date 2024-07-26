@@ -1,0 +1,6 @@
+framework module DoorstepAIiOSSDK {
+  umbrella header "DoorstepAIiOSSDK.h"
+  export *
+
+  module * { export * }
+}

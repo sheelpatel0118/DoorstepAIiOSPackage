@@ -12,20 +12,21 @@ let package = Package(
             targets: ["DoorstepAIiOSPackageWrapper"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/google-ar/arcore-ios-sdk", from: "1.44.0")
+        .package(url: "https://github.com/google-ar/arcore-ios-sdk", from: "1.41.0")
     ],
     targets: [
         .target(
             name: "DoorstepAIiOSPackageWrapper",
             dependencies: [
-                "DoorstepAIiOSSDKFramework",
-                .product(name: "ARCoreGeospatial", package: "arcore-ios-sdk")
+                "DoorstepAIiOSSDK",
+                .product(name: "ARCoreGeospatial", package: "arcore-ios-sdk"),
+                .product(name: "ARCoreGARSession", package: "arcore-ios-sdk")
             ],
             path: "Sources/Wrapper"
         ),
         .binaryTarget(
-            name: "DoorstepAIiOSSDKFramework",
-            path: "./Sources/DoorstepAIiOSSDKFramework.xcframework"
+            name: "DoorstepAIiOSSDK",
+            path: "./Sources/DoorstepAIiOSSDK.xcframework"
         )
     ]
 )
