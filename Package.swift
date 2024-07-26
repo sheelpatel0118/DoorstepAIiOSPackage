@@ -11,13 +11,17 @@ let package = Package(
             name: "DoorstepAIiOSPackage",
             targets: ["DoorstepAIiOSPackage"]),
     ],
+    dependencies: [
+            .package(url: "https://github.com/google-ar/arcore-ios-sdk", from: "1.44.0")
+        ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "DoorstepAIiOSPackage"),
+//        .target(
+//            name: "DoorstepAIiOSPackage"),
         .testTarget(
             name: "DoorstepAIiOSPackageTests",
             dependencies: ["DoorstepAIiOSPackage"]),
+        .binaryTarget(name: "DoorstepAIiOSPackage", path: "./Sources/DoorstepAIiOSSDKFramework.xcframework")
     ]
 )
