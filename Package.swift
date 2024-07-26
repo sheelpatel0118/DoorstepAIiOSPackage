@@ -1,12 +1,10 @@
 // swift-tools-version: 5.10
-// The swift-tools-version declares the minimum version of Swift required to build this package.
-
 import PackageDescription
 
 let package = Package(
     name: "DoorstepAIiOSPackage",
     platforms: [
-        .iOS(.v15)
+        .iOS(.v11)
     ],
     products: [
         .library(
@@ -20,14 +18,13 @@ let package = Package(
         .target(
             name: "DoorstepAIiOSPackageWrapper",
             dependencies: [
-                .target(name: "DoorstepAIiOSPackage"),
-                .product(name: "ARCoreGeospatial", package: "arcore-ios-sdk"),
-                .product(name: "ARCoreGARSession", package: "arcore-ios-sdk")
+                "DoorstepAIiOSSDKFramework",
+                .product(name: "ARCoreGeospatial", package: "arcore-ios-sdk")
             ],
             path: "Sources/Wrapper"
         ),
         .binaryTarget(
-            name: "DoorstepAIiOSPackage",
+            name: "DoorstepAIiOSSDKFramework",
             path: "./Sources/DoorstepAIiOSSDKFramework.xcframework"
         )
     ]
