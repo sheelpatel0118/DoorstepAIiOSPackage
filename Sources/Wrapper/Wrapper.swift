@@ -1,4 +1,5 @@
 import Foundation
+import DoorstepAIiOSSDKFramework
 import ARCoreGeospatial
 
 // You'll need to import your binary framework here, but the name might be different
